@@ -28,6 +28,7 @@ export default function CashbackPage() {
   const breakdown = getCashbackBreakdown(account.id);
 
   function handleCredit() {
+    if (!account) return;
     const amount = creditCashback(account.id);
     if (amount > 0) {
       setCredited(true);
