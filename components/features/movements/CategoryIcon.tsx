@@ -18,7 +18,9 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
+type IconProps = { className?: string; size?: number; "aria-hidden"?: boolean };
+
+const ICON_MAP: Record<string, React.ComponentType<IconProps>> = {
   ArrowDownLeft,
   ArrowUpRight,
   Briefcase,
