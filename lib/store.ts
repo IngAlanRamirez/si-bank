@@ -1,6 +1,6 @@
 "use client";
 
-import type { User, Account, Movement, DigitalCard, Beneficiary, Session, ActivityEvent, UserPreferences, DeferredDebt } from "./types";
+import type { User, Account, Movement, DigitalCard, CardBrand, Beneficiary, Session, ActivityEvent, UserPreferences, DeferredDebt } from "./types";
 import { getCategoryById } from "./categories";
 import { getCashbackRateForCategory } from "./cashback";
 
