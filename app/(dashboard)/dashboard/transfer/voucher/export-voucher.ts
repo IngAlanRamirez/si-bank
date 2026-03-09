@@ -8,7 +8,7 @@ import { getCategoryById } from "@/lib/categories";
 export function exportVoucherPdf(movement: Movement): void {
   const category = getCategoryById(movement.categoryId);
   const doc = new jsPDF({ unit: "mm", format: "a4" });
-  const pageW = doc.getPageWidth();
+  const pageW = 210; // A4 width in mm
   const margin = 20;
   let y = 24;
 
